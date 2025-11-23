@@ -12,14 +12,14 @@ class MaxOddSum{
             }
             if(num % 2 != 0){
                 oddexist = true;
-                minOdd = Math.min(minOdd,Math.abs(num));
+                minodd = Math.min(minOdd,Math.abs(num));
             }
         }
         if(!oddexist){
             return -1;
         }
         if(sum % 2 == 0){
-            sum = sum - minOdd;
+            sum = sum - minodd;
         }
         return sum;
     }
