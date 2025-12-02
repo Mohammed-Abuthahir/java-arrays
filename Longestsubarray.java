@@ -30,11 +30,11 @@ class Longestsubarray{
         System.out.println("Enter the Size :");
         int n = scan.nextInt();
         System.out.println("Enter the Arays :");
-        int[] nums = new int[n];
-        for(int i = 0;i<nums.length;i++){
-            nums[i] = scan.nextInt();
+        int[] arr = new int[n];
+        for(int i = 0;i<arr.length;i++){
+            arr[i] = scan.nextInt();
         }
-        ArrayList<Integer> result = subarrayproblem(nums);
+        ArrayList<Integer> result = subarrayproblem(arr);
         System.out.println("Longest subarray :"+result);
     }
 }
