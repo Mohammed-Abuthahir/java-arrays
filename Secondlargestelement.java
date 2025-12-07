@@ -10,7 +10,11 @@ class Secondlatgestelement{
         int max = Collections.max(set);
         set.remove(max);
         max = Collections.max(set);
+        if(nums.length == 1){
+            max = nums[0];
+        }
         return max;
+        
     }
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
